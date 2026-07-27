@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "244916496846",
+    "project_id": "com-dev-caiovinicius-roc-fe467",
+    "storage_bucket": "com-dev-caiovinicius-roc-fe467.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244916496846:android:cd26a5fa1456116848239f",
+        "android_client_info": {
+          "package_name": "com.dev.caiovinicius.rocketia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ8fYN8SITRcFPEfKKqM78FDnZuEUF6yU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
