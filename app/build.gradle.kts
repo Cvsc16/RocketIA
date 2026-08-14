@@ -41,6 +41,7 @@ android {
 dependencies {
     implementation(libs.material)
     implementation(libs.lottie)
+    implementation(libs.bundles.navigation)
 
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
