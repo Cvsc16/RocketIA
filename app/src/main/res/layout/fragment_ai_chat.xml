@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="@dimen/md_16dp"
-    tools:context=".AIChatFragment">
+    tools:context=".ui.AIChatFragment">
 
     <LinearLayout
         android:id="@+id/llAppName"
@@ -26,43 +26,42 @@
             style="@style/TextLarge"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginHorizontal="@dimen/sm_8dp"
-            android:text="@string/app_name" />
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:textStyle="bold" />
 
         <ImageButton
             android:layout_width="@dimen/lg_48dp"
             android:layout_height="@dimen/xlg_54dp"
-            android:background="@color/background_elevated"
+            android:backgroundTint="@color/background_elevated"
             android:src="@drawable/ic_settings"
             android:tint="@color/white"
-            tools:ignore="UseAppTint"
-            />
-
+            tools:ignore="UseAppTint" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/tvHelloWhichStackAreYouGoingToStudy"
-        style="@style/TextLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/TextLarge"
         android:layout_marginTop="@dimen/md_16dp"
         android:text="@string/ola_dev"
-        android:textColor="@color/text_body"
+        app:layout_constraintTop_toBottomOf="@id/llAppName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/llAppName" />
+        android:textColor="@color/text_body" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvStudyAIChat"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginVertical="8dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toTopOf="@+id/tilAIQuestion"
+        app:layout_constraintTop_toBottomOf="@id/tvHelloWhichStackAreYouGoingToStudy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHelloWhichStackAreYouGoingToStudy" />
+        android:layout_marginVertical="@dimen/sm_8dp"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilAIQuestion"
@@ -90,8 +89,8 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/xlg_54dp"
         android:text="@string/enviar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

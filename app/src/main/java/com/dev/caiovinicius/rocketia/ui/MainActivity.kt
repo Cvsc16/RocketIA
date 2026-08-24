@@ -1,4 +1,4 @@
-package com.dev.caiovinicius.rocketia
+package com.dev.caiovinicius.rocketia.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

@@ -1,4 +1,4 @@
-package com.dev.caiovinicius.rocketia
+package com.dev.caiovinicius.rocketia.ui
 
 import android.graphics.Bitmap
 import androidx.lifecycle.ViewModel
