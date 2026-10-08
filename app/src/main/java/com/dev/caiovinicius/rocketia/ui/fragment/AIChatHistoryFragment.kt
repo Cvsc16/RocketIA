@@ -1,4 +1,4 @@
-package com.dev.caiovinicius.rocketia.ui
+package com.dev.caiovinicius.rocketia.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,13 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.dev.caiovinicius.rocketia.R
 
-class AIChatFragment : Fragment() {
+class AIChatHistoryFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_ai_chat, container, false)
+        return inflater.inflate(R.layout.fragment_ai_chat_history, container, false)
     }
 
 }

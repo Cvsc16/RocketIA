@@ -28,7 +28,7 @@ class AIChatLocalDataSourceImpl(
         answer: AIChatTextEntity
     ) {
         withContext(ioDispatcher) {
-            aiChatHistoryDao.insertAll(question, answer)
+            aiChatHistoryDao.insertAll(listOf(question, answer))
         }
     }
 

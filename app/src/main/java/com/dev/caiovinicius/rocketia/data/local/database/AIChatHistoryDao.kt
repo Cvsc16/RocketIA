@@ -12,6 +12,6 @@ interface AIChatHistoryDao {
     fun getAllByStack(stack: String): Flow<List<AIChatTextEntity>>
 
     @Insert
-    suspend fun insertAll(vararg aiChatText: AIChatTextEntity)
+    fun insertAll(aiChatText: List<AIChatTextEntity>)
 
 }

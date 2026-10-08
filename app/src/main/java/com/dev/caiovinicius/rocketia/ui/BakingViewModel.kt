@@ -3,6 +3,7 @@ package com.dev.caiovinicius.rocketia.ui
 import android.graphics.Bitmap
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.dev.caiovinicius.rocketia.ui.state.UiState
 import com.google.firebase.Firebase
 import com.google.firebase.ai.ai
 import com.google.firebase.ai.type.content

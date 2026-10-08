@@ -1,4 +1,4 @@
-package com.dev.caiovinicius.rocketia.ui
+package com.dev.caiovinicius.rocketia.ui.state
 
 sealed interface UiState {
 
